@@ -1,0 +1,229 @@
+header,
+main,
+footer {
+    min-width: 290px;
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    padding: 40px 0 20px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header h1 a img {
+    width: 200px;
+}
+
+/* main */
+
+
+main form fieldset {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+main form fieldset ul li {
+    display: flex;
+    position: relative;
+}
+
+main form fieldset ul li:nth-child(3) {
+    margin-top: 16px;
+}
+main form fieldset ul li .icon {
+    width: 48px;
+    height: 48px;
+    background: #fafafa;
+    border: 1px solid #ccc;
+    border-right: 0;
+    position: relative;
+    box-sizing: content-box;
+}
+
+main form fieldset ul li .icon::after {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main form fieldset ul li .id_icon::after {
+    background-image: url(../img/icon.svg);
+}
+
+main form fieldset ul li .pw_icon::after {
+    background-position: 127px -1px;
+    background-image: url(../img/icon.svg);
+}
+
+main form fieldset ul li span:nth-child(2) {
+    width: 100%;
+}
+
+main form fieldset ul li span input {
+    height: 48px;
+    text-indent: 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: content-box;
+    border-radius: 0;
+}
+
+main form fieldset ul li span input:focus {
+    outline: none;
+}
+
+main form fieldset ul li span input::placeholder {
+    font-size: 0.875rem;
+    color: #aaa;
+    font-weight: 500;
+}
+
+main form fieldset ul li span input[type=text] {}
+
+main form fieldset ul li span input[type=password] {}
+
+main form fieldset ul li .pw_show_hide {
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 23px;
+    background-image: url(../img/icon.svg);
+    background-position: -106px 0;
+    /* �대┃�� -127px */
+}
+
+main form fieldset ul .error {
+    font-size: 0.813rem;
+    color: #e52528;
+    padding: 12px;
+    padding-bottom: 0;
+    display: none;
+}
+
+main form fieldset .btm {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 12px;
+    align-items: center;
+}
+
+main form fieldset .btm label {
+    display: flex;
+    align-items: center;
+}
+
+main form fieldset .btm label input[type=checkbox] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border: -1px solid #ccc;
+    border-radius: 2px;
+    margin-right: 5px;
+    position: relative;
+    overflow: hidden;
+    content: '';
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-shadow: inset 0 3px 0 rgb(0 0 0 / 5%);
+}
+
+main form fieldset .btm label input[type=checkbox]::after {
+    /* 泥댄겕�쒖떆 */
+    content: '';
+    display: block;
+    width: 18px;
+    height: 13px;
+    background-image: url(/img/icon.svg);
+    background-position: -84px -21px;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+}
+
+main form fieldset .btm label input[type=checkbox]:checked::after {
+    top: 50%;
+}
+
+main form fieldset .btm label span {
+    cursor: pointer;
+    color: #555;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+main form fieldset .btm a {
+    color: #0073e9;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+main form fieldset .btm a::after {
+    content: '';
+    display: inline-block;
+    background-image: url(/img/icon.svg);
+    width: 9px;
+    height: 15px;
+    background-position: -102px -21px;
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+}
+
+main .btn {
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
+    font-weight: 700;
+    font-family: apple sd gothic neo, malgun gothic, nanumbarungothic, nanumgothic, dotum, sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+main form fieldset #login_btn {
+    background: #0074e9;
+    color: #fff;
+}
+
+main #join_btn {
+    display: block;
+    text-align: center;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #0074e9;
+}
+
+/* footer */
+footer {
+    padding: 20px 0;
+}
+
+footer p {
+    text-align: center;
+    font-family: dotum,sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #555;
+}
